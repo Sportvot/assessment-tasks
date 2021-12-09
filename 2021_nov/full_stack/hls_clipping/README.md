@@ -55,7 +55,7 @@ The script you design will analyze the input times(`-ss` and `-to`), select the 
 
 - This is an example with `-ss 37` and `-to 72`.
 - Notice that the output m3u8 does not have absolute URLs for the .ts segments. This means the .ts segment paths are relative to the path of the output m3u8 locally.
-- Red lines indicate that the original .ts segments were chopped as indicated by the `#EXTINF` for these segments since their length is less than the original 10.01000 seconds. These are the boundary .ts segments that are determined by `-ss` and `-to.`
+- Red lines indicate that the original .ts segments were chopped, as indicated by the `#EXTINF` for these segments since their length is less than the original 10.01000 seconds. These are the boundary .ts segments that are determined by `-ss` and `-to.`
 - White lines indicate that these are just copies of the original ts segments since they do not lie on the boundary.
 
 ## Submission & Help

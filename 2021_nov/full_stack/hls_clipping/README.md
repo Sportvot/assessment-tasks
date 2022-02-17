@@ -20,7 +20,8 @@ FFMPEG does support this natively. You may run the below command on your machine
 ```bash
 # -ss -> start time of the clip in seconds
 # -to -> end time of the clip in seconds
-ffmpeg -i /some/path/original.m3u8 -ss 12 -to 34 ./out/out.m3u8
+# Note: ignore protocol_whitelist arg, its only for ffmpeg
+ffmpeg -protocol_whitelist https,file,tls,tcp -i /some/path/original.m3u8 -ss 12 -to 34 ./out/out.m3u8
 ```
 
 But, to meet the `Evaluative Goals` of this task, you need to design a script(any language) that has the same behavior as the above FFmpeg example.

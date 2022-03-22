@@ -41,7 +41,7 @@ The script you design will analyze the input times(`-ss` and `-to`), select the 
 - Read `-ss`, `-to`, and the output path as specified from the command line to your script.
 - `#EXTINF:[segment-lenght]` lines in the m3u8 file determine the length of each segment.
 - Read m3u8 text file line by line and download the required .ts segments as determined by `-ss` and `-to`
-- Chop the boundary ts segments as needed (see Input -> Output Example section below)
+- Chop(using ffmepg) the boundary ts segments as needed (see Input -> Output Example section below)
 - Generate the output m3u8 file line by line giving it the relative paths of the downloaded/chopped .ts segments.
 - You can use the `FFprobe` command to determine the exact length of the chopped boundary segments and use it as the `#EXTINF` of the boundary .ts segments in the output m3u8 you are generating.
 - Play the m3u8 in VLC and verify the clip is correct as specified by `-ss` and `-to`.

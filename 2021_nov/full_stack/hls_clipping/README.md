@@ -65,7 +65,7 @@ While it's great if you can solve the task by yourself, we highly value effectiv
 
 Feel free to reach out to us via email:
 - `TO` - Luis Gomes (luis@freehitnews.com)
-- `CC` - Sidhhant Agarwal (omkar@freehitnews.com)
+- `TO` - Omkar Pai (omkar@freehitnews.com)
 
 
 To submit your work, you may create private a GitHub repo and add `gomesLuis479SV` and `omkar-pai` as a collaborator.
